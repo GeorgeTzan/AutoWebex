@@ -10,7 +10,7 @@ import pyautogui
 import pygetwindow as gw
 from datetime import datetime as date
 
-# anoigma kai check toy webex
+# opens and checks for the webex app
 webexcheck = subprocess.check_output('tasklist', shell=True)
 
 
@@ -36,10 +36,12 @@ try:
         webexapp.minimize()
 except:
     pass
-# wres mathimatwn
+
 check = time.localtime()
 current_timecheck = time.strftime("%H:%M:%S", check)
 day = date.today().strftime("%A")
+
+# class hours
 firstPeriodStart = '07:59:00'
 firstPeriodEnd = '08:39:00'
 SecondPeriodStart = '08:50:00'
@@ -55,19 +57,23 @@ SixthPeriodEnd = '12:49:00'
 SeventhPeriodStart = '12:59:00'
 SeventhPeriodEnd = '13:39:00'
 
-#breaks
+# breaks
+breakpreSchoolStart = '05:00:00'
+breakpreSchoolEnd = '07:58:50'
 breakTimeStart = '08:39:00'
-breakTimeEnd = '08:50:00' # prwth wra ^
+breakTimeEnd = '08:50:00'  # prwth wra ^
 breakTime2Start = '09:29:00'
-breakTime2End = '09:38:30' # deuteri wra ^
+breakTime2End = '09:38:30'  # deuteri wra ^
 breakTime3Start = '10:19:00'
-breakTime3End = '10:29:55' # trith wra ^
-breakTime4Start ='11:10:00'
-breakTime4End = '11:19:55' # tetarth wra ^
+breakTime3End = '10:29:55'  # trith wra ^
+breakTime4Start = '11:10:00'
+breakTime4End = '11:19:55'  # tetarth wra ^
 breakTime5Start = '12:00:00'
-breakTime5End = '12:10:00' # pempth wra ^
+breakTime5End = '12:10:00'  # pempth wra ^
 breakTime6Start = '12:50:00'
-breakTime6End = '13:00:00' # ekth wra ^
+breakTime6End = '13:00:00'  # ekth wra ^
+
+
 # mouse movement & clicks
 def clicks():
     pyautogui.moveTo(278, 180)
@@ -118,21 +124,25 @@ eisagwgh = 'https://minedu-secondary2.webex.com/meet/mich1'
 print(day)
 print(current_timecheck)
 
-# loop wste na trexei gia panta
+# loop wste na trexei gia panta // Loop so it runs forever
 run = True
 while run:
+    # gets day & time
+    check = time.localtime()
+    current_timecheck = time.strftime("%H:%M:%S", check)
+    day = date.today().strftime("%A")
 
     if day == 'Monday' and firstPeriodStart <= current_timecheck <= SecondPeriodEnd:
         browser = webdriver.Chrome(executable_path=r'C:\Users\epalelefth\PycharmProjects\AntiQueueBot\chromedriver.exe')
         type(browser)
         browser.get(basikathemata)
         clicks()
-        pause.minutes(90)
+        pause.minutes(1)
         disconnect()
         pause.seconds(2)
         continue
     elif day == 'Monday' and breakTime3Start <= current_timecheck <= breakTime3End:
-        print ("Διάλειμμα")
+        print("Διάλειμμα")
         pause.seconds(5)
         continue
 
@@ -177,14 +187,13 @@ while run:
         browser = webdriver.Chrome(executable_path=r'C:\Users\epalelefth\PycharmProjects\AntiQueueBot\chromedriver.exe')
         type(browser)
         browser.get(python)
-        # pause.until(date(2021, 8, 49, 2))
         clicks()
         pause.minutes(40)
         disconnect()
         pause.seconds(2)
         continue
     elif day == 'Tuesday' and breakTimeStart <= current_timecheck <= breakTimeEnd:
-        print ("Διάλειμμα")
+        print("Διάλειμμα")
         pause.seconds(5)
         continue
 
@@ -198,7 +207,7 @@ while run:
         pause.seconds(2)
         continue
     elif day == 'Tuesday' and breakTime2Start <= current_timecheck <= breakTime2End:
-        print ("Διάλειμμα")
+        print("Διάλειμμα")
         pause.seconds(5)
         continue
     elif day == 'Tuesday' and ThirdPeriodStart <= current_timecheck <= ThirdPeriodEnd:
@@ -211,21 +220,20 @@ while run:
         pause.seconds(2)
         continue
     elif day == 'Tuesday' and breakTime3Start <= current_timecheck <= breakTime3End:
-        print ("Διάλειμμα")
+        print("Διάλειμμα")
         pause.seconds(5)
         continue
     elif day == 'Tuesday' and FourthPeriodStart <= current_timecheck <= FourthPeriodEnd:
         browser = webdriver.Chrome(executable_path=r'C:\Users\epalelefth\PycharmProjects\AntiQueueBot\chromedriver.exe')
         type(browser)
         browser.get(ylikonduktia)
-        # pause.until(datetime(2020, 12, 9, 2))
         clicks()
         pause.minutes(40)
         disconnect()
         pause.seconds(2)
         continue
     elif day == 'Tuesday' and breakTime4Start <= current_timecheck <= breakTime4End:
-        print ("Διάλειμμα")
+        print("Διάλειμμα")
         pause.seconds(5)
         continue
     elif day == 'Tuesday' and FifthPeriodStart <= current_timecheck <= FifthPeriodEnd:
@@ -252,7 +260,7 @@ while run:
         pause.seconds(2)
         continue
     elif day == 'Tuesday' and breakTime6Start <= current_timecheck <= breakTime6End:
-        print ("Διάλειμμα")
+        print("Διάλειμμα")
         pause.seconds(5)
         continue
     elif day == 'Tuesday' and SeventhPeriodStart <= current_timecheck <= SeventhPeriodEnd:
@@ -274,7 +282,7 @@ while run:
         disconnect()
         continue
     elif day == 'Wednesday' and breakTime2Start <= current_timecheck <= breakTime2End:
-        print ("Διάλειμμα")
+        print("Διάλειμμα")
         pause.seconds(5)
         continue
     elif day == 'Wednesday' and ThirdPeriodStart <= current_timecheck <= ThirdPeriodEnd:
@@ -287,7 +295,7 @@ while run:
         pause.seconds(2)
         continue
     elif day == 'Wednesday' and breakTime3Start <= current_timecheck <= breakTime3End:
-        print ("Διάλειμμα")
+        print("Διάλειμμα")
         pause.seconds(5)
         continue
     elif day == 'Wednesday' and FourthPeriodStart <= current_timecheck <= FourthPeriodEnd:
@@ -300,7 +308,7 @@ while run:
         pause.seconds(2)
         continue
     elif day == 'Wednesday' and breakTime4Start <= current_timecheck <= breakTime4End:
-        print ("Διάλειμμα")
+        print("Διάλειμμα")
         pause.seconds(5)
         continue
     elif day == 'Wednesday' and FifthPeriodStart <= current_timecheck <= FifthPeriodEnd:
@@ -313,7 +321,7 @@ while run:
         pause.seconds(2)
         continue
     elif day == 'Wednesday' and breakTime5Start <= current_timecheck <= breakTime5End:
-        print ("Διάλειμμα")
+        print("Διάλειμμα")
         pause.seconds(5)
         continue
     elif day == 'Wednesday' and SixthPeriodStart <= current_timecheck <= SeventhPeriodEnd:
