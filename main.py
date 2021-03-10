@@ -165,7 +165,7 @@ while run:
         type(browser)
         browser.get(basikathemata)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 55, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 55, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -246,7 +246,7 @@ while run:
         type(browser)
         browser.get(python)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 00, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 00, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -261,7 +261,7 @@ while run:
         type(browser)
         browser.get(pwlhseis)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 55, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 55, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -331,7 +331,7 @@ while run:
         type(browser)
         browser.get(glwssa)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 00, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 00, 05, 00))
         disconnect()
         continue
     
@@ -345,7 +345,7 @@ while run:
         type(browser)
         browser.get(leitourgika)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 55, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 55, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -466,7 +466,7 @@ while run:
         type(browser)
         browser.get(glwssa)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 00, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 00, 05, 00))
         disconnect()
         continue
     
@@ -480,7 +480,7 @@ while run:
         type(browser)
         browser.get(gym)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 55, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 55, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
