@@ -131,9 +131,20 @@ def disconnect():
 
 
 # Class links
-'''
-put variables with your class links here
-'''
+basikathemata = 'https://minedu-secondary2.webex.com/meet/mich1'
+pwlhseis = 'https://minedu-secondary2.webex.com/meet/vraxenidis'
+agglika = 'https://minedu-secondary2.webex.com/meet/mkalogiann'
+istotopoi = 'https://minedu-secondary2.webex.com/meet/sathanasiou'
+python = "https://minedu-secondary2.webex.com/meet/mich1"
+mathematika = 'https://minedu-secondary2.webex.com/meet/kxenitidis'
+glwssa = 'https://minedu-secondary2.webex.com/meet/despkarydi'
+leitourgika = 'https://minedu-secondary2.webex.com/meet/nsivakis'
+ylikonduktia = 'https://minedu-secondary2.webex.com/meet/nsivakis'
+chemistry = 'https://minedu-secondary2.webex.com/meet/mgkosiou'
+fysikh = 'https://minedu-secondary2.webex.com/meet/ggerakaki'
+religion = 'https://minedu-secondary2.webex.com/meet/panandread'
+gym = 'https://minedu-secondary2.webex.com/meet/xakoustou'
+eisagwgh = 'https://minedu-secondary2.webex.com/meet/mich1'
 
 print(day)
 
@@ -150,7 +161,7 @@ while run:
     day = date.today().strftime("%A")
     print(current_timecheck)
     if day == 'Monday' and firstPeriodStart <= current_timecheck <= SecondPeriodEnd:
-        browser = webdriver.Chrome(executable_path=r'C:\AutoWebex\chromedriver.exe')
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(basikathemata)
         clicks()
@@ -164,7 +175,7 @@ while run:
         continue
 
     elif day == 'Monday' and ThirdPeriodStart <= current_timecheck <= ThirdPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(ylikonduktia)
         clicks()
@@ -177,7 +188,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Monday' and FourthPeriodStart <= current_timecheck <= FourthPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(basikathemata)
         clicks()
@@ -190,7 +201,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Monday' and FifthPeriodStart <= current_timecheck <= FifthPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(agglika)
         clicks()
@@ -203,7 +214,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Monday' and SixthPeriodStart <= current_timecheck <= SixthPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(mathematika)
         clicks()
@@ -212,7 +223,7 @@ while run:
         pause.seconds(3)
         continue
     elif day == 'Monday' and SeventhPeriodStart <= current_timecheck <= SeventhPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(glwssa)
         clicks()
@@ -223,7 +234,7 @@ while run:
     # Tuesday
 
     elif day == 'Tuesday' and firstPeriodStart <= current_timecheck <= firstPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(python)
         clicks()
@@ -237,7 +248,7 @@ while run:
         continue
 
     elif day == 'Tuesday' and SecondPeriodStart <= current_timecheck <= SecondPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(pwlhseis)
         clicks()
@@ -250,7 +261,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Tuesday' and ThirdPeriodStart <= current_timecheck <= ThirdPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(religion)
         clicks()
@@ -263,7 +274,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Tuesday' and FourthPeriodStart <= current_timecheck <= FourthPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(chemistry)
         clicks()
@@ -276,7 +287,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Tuesday' and FifthPeriodStart <= current_timecheck <= FifthPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(leitourgika)
         clicks()
@@ -289,7 +300,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Tuesday' and SixthPeriodStart <= current_timecheck <= SeventhPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(istotopoi)
         clicks()
@@ -299,7 +310,7 @@ while run:
         run = False
     # Wednesday
     elif day == 'Wednesday' and firstPeriodStart <= current_timecheck <= firstPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(glwssa)
         clicks()
@@ -311,7 +322,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Wednesday' and SecondPeriodStart <= current_timecheck <= SecondPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(leitourgika)
         clicks()
@@ -324,7 +335,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Wednesday' and ThirdPeriodStart <= current_timecheck <= ThirdPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(mathematika)
         clicks()
@@ -337,7 +348,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Wednesday' and FourthPeriodStart <= current_timecheck <= FourthPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(basikathemata)
         clicks()
@@ -350,7 +361,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Wednesday' and FifthPeriodStart <= current_timecheck <= FifthPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(fysikh)
         clicks()
@@ -363,7 +374,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Wednesday' and SixthPeriodStart <= current_timecheck <= SeventhPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(ylikonduktia)
         clicks()
@@ -374,7 +385,7 @@ while run:
 
     # Thursday
     elif day == 'Thursday' and firstPeriodStart <= current_timecheck <= ThirdPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(python)
         clicks()
@@ -386,7 +397,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Thursday' and FourthPeriodStart <= current_timecheck <= FifthPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(pwlhseis)
         clicks()
@@ -399,7 +410,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Thursday' and SixthPeriodStart <= current_timecheck <= SixthPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get('https://minedu-secondary2.webex.com/meet/nsivakis')
         clicks()
@@ -408,7 +419,7 @@ while run:
         pause.seconds(2)
         continue
     elif day == 'Thursday' and SeventhPeriodStart <= current_timecheck <= SeventhPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(agglika)
         clicks()
@@ -418,7 +429,7 @@ while run:
         run = False
     # Friday
     elif day == 'Friday' and firstPeriodStart <= current_timecheck <= firstPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(glwssa)
         clicks()
@@ -430,7 +441,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Friday' and SecondPeriodStart <= current_timecheck <= SecondPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(gym)
         clicks()
@@ -443,7 +454,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Friday' and ThirdPeriodStart <= current_timecheck <= FourthPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(istotopoi)
         clicks()
@@ -456,7 +467,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Friday' and FifthPeriodStart <= current_timecheck <= FifthPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(leitourgika)
         clicks()
@@ -469,7 +480,7 @@ while run:
         pause.seconds(5)
         continue
     elif day == 'Friday' and SixthPeriodStart <= current_timecheck <= SixthPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(eisagwgh)
         clicks()
@@ -478,7 +489,7 @@ while run:
         pause.seconds(1)
         continue
     elif day == 'Friday' and SeventhPeriodStart <= current_timecheck <= SeventhPeriodEnd:
-        browser = webdriver.Chrome(executable_path=driver_location, options=options)
+        browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(mathematika)
         clicks()
