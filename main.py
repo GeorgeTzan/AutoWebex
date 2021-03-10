@@ -86,13 +86,13 @@ breakTime5End = '12:29:05'  # pempth wra ^
 
 # mouse movement & clicks
 def clicks():
-        chromeWebexENG = pyautogui.locateOnScreen(r"C:\AutoWebex\Images\chromeCheckBox.PNG")
-        pyautogui.moveTo(chromeWebexENG)
-        pyautogui.click()
+    chromeWebexENG = pyautogui.locateOnScreen(r"C:\AutoWebex\Images\chromeCheckBox.PNG")
+    pyautogui.moveTo(chromeWebexENG)
+    pyautogui.click()
         
-        chromeWebexRun = pyautogui.locateOnScreen(r"C:\AutoWebex\Images\runWebexChromeENG.PNG")
-        pyautogui.moveTo(chromeWebexRun)
-        pyautogui.click()
+    chromeWebexRun = pyautogui.locateOnScreen(r"C:\AutoWebex\Images\runWebexChromeENG.PNG")
+    pyautogui.moveTo(chromeWebexRun)
+    pyautogui.click()
 
     try:
         os.system("taskkill /f /im chrome.exe")
