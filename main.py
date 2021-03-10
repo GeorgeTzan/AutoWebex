@@ -44,7 +44,6 @@ try:
         webexapp.close()
 except Exception as e:
     print (e)
-    print ("poggers")
 
 check = time.localtime()
 current_timecheck = time.strftime("%H:%M:%S", check)
@@ -165,7 +164,7 @@ while run:
         type(browser)
         browser.get(basikathemata)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 55, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 55, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -179,7 +178,7 @@ while run:
         type(browser)
         browser.get(ylikonduktia)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 10, 50, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 10, 50, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -194,7 +193,7 @@ while run:
         type(browser)
         browser.get(basikathemata)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 11, 40, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 11, 40, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -209,7 +208,7 @@ while run:
         type(browser)
         browser.get(agglika)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 45, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 45, 5, 00))
         disconnect()
         pause.seconds(3)
         continue
@@ -234,7 +233,7 @@ while run:
         type(browser)
         browser.get(glwssa)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 5, 00))
         disconnect()
         pause.seconds(3)
         run = False
@@ -246,7 +245,7 @@ while run:
         type(browser)
         browser.get(python)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 00, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 00, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -261,7 +260,7 @@ while run:
         type(browser)
         browser.get(pwlhseis)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 55, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 55, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -276,7 +275,7 @@ while run:
         type(browser)
         browser.get(religion)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 10, 50, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 10, 50, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -291,7 +290,7 @@ while run:
         type(browser)
         browser.get(chemistry)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 11, 40, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 11, 40, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -306,7 +305,7 @@ while run:
         type(browser)
         browser.get(leitourgika)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 25, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 25, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -320,7 +319,7 @@ while run:
         type(browser)
         browser.get(istotopoi)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 5, 00))
         disconnect()
         pause.seconds(2)
         run = False
@@ -331,7 +330,7 @@ while run:
         type(browser)
         browser.get(glwssa)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 00, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 00, 5, 00))
         disconnect()
         continue
     
@@ -345,7 +344,7 @@ while run:
         type(browser)
         browser.get(leitourgika)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 55, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 55, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -360,7 +359,7 @@ while run:
         type(browser)
         browser.get(mathematika)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 10, 50, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 10, 50, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -375,7 +374,7 @@ while run:
         type(browser)
         browser.get(basikathemata)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 11, 40, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 11, 40, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -430,7 +429,7 @@ while run:
         type(browser)
         browser.get(pwlhseis)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 25, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 25, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -445,7 +444,7 @@ while run:
         type(browser)
         browser.get('https://minedu-secondary2.webex.com/meet/nsivakis')
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 10, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 10, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -455,7 +454,7 @@ while run:
         type(browser)
         browser.get(agglika)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 5, 00))
         disconnect()
         pause.seconds(2)
         run = False
@@ -466,7 +465,7 @@ while run:
         type(browser)
         browser.get(glwssa)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 00, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 00, 5, 00))
         disconnect()
         continue
     
@@ -480,7 +479,7 @@ while run:
         type(browser)
         browser.get(gym)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 55, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 9, 55, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -495,7 +494,7 @@ while run:
         type(browser)
         browser.get(istotopoi)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 11, 40, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 11, 40, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -510,7 +509,7 @@ while run:
         type(browser)
         browser.get(leitourgika)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 25, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 25, 5, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -525,7 +524,7 @@ while run:
         type(browser)
         browser.get(eisagwgh)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 09, 55, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 9, 55, 00))
         disconnect()
         pause.seconds(1)
         continue
@@ -535,7 +534,7 @@ while run:
         type(browser)
         browser.get(mathematika)
         clicks()
-        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 05, 00))
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 5, 00))
         disconnect()
         pause.seconds(1)
         run = False
