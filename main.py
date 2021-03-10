@@ -58,7 +58,7 @@ SecondPeriodEnd = '09:54:00'
 ThirdPeriodStart = '10:04:00'
 ThirdPeriodEnd = '10:49:00'
 FourthPeriodStart = '10:59:00'
-FourthPeriodEnd = '11:09:00'
+FourthPeriodEnd = '11:39:00'
 FifthPeriodStart = '11:44:00'
 FifthPeriodEnd = '12:24:00'
 SixthPeriodStart = '12:29:00'
@@ -165,7 +165,7 @@ while run:
         type(browser)
         browser.get(basikathemata)
         clicks()
-        pause.minutes(100)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 55, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
@@ -179,58 +179,66 @@ while run:
         type(browser)
         browser.get(ylikonduktia)
         clicks()
-        pause.minutes(45)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 10, 50, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Monday' and breakTime3Start <= current_timecheck <= breakTime3End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Monday' and FourthPeriodStart <= current_timecheck <= FourthPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(basikathemata)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 11, 40, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Monday' and breakTime4Start <= current_timecheck <= breakTime4End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Monday' and FifthPeriodStart <= current_timecheck <= FifthPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(agglika)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 45, 05, 00))
         disconnect()
         pause.seconds(3)
         continue
+    
     elif day == 'Monday' and breakTime5Start <= current_timecheck <= breakTime5End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Monday' and SixthPeriodStart <= current_timecheck <= SixthPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(mathematika)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 10, 00, 00))
         disconnect()
         pause.seconds(3)
         continue
+    
     elif day == 'Monday' and SeventhPeriodStart <= current_timecheck <= SeventhPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(glwssa)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 05, 00))
         disconnect()
         pause.seconds(3)
         run = False
+        
     # Tuesday
 
     elif day == 'Tuesday' and firstPeriodStart <= current_timecheck <= firstPeriodEnd:
@@ -238,10 +246,11 @@ while run:
         type(browser)
         browser.get(python)
         clicks()
-        pause.minutes(45)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 00, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Tuesday' and breakTimeStart <= current_timecheck <= breakTimeEnd:
         print("Διάλειμμα")
         pause.seconds(5)
@@ -252,49 +261,56 @@ while run:
         type(browser)
         browser.get(pwlhseis)
         clicks()
-        pause.minutes(45)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 55, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Tuesday' and breakTime2Start <= current_timecheck <= breakTime2End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Tuesday' and ThirdPeriodStart <= current_timecheck <= ThirdPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(religion)
         clicks()
-        pause.minutes(45)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 10, 50, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Tuesday' and breakTime3Start <= current_timecheck <= breakTime3End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Tuesday' and FourthPeriodStart <= current_timecheck <= FourthPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(chemistry)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 11, 40, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Tuesday' and breakTime4Start <= current_timecheck <= breakTime4End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Tuesday' and FifthPeriodStart <= current_timecheck <= FifthPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(leitourgika)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 25, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Tuesday' and breakTime5Start <= current_timecheck <= breakTime5End:
         print("Διάλειμμα")
         pause.seconds(5)
@@ -304,81 +320,92 @@ while run:
         type(browser)
         browser.get(istotopoi)
         clicks()
-        pause.minutes(80)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 05, 00))
         disconnect()
         pause.seconds(2)
         run = False
+        
     # Wednesday
     elif day == 'Wednesday' and firstPeriodStart <= current_timecheck <= firstPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(glwssa)
         clicks()
-        pause.minutes(45)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 00, 05, 00))
         disconnect()
         continue
+    
     elif day == 'Wednesday' and breakTimeStart <= current_timecheck <= breakTimeEnd:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Wednesday' and SecondPeriodStart <= current_timecheck <= SecondPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(leitourgika)
         clicks()
-        pause.minutes(45)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 55, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Wednesday' and breakTime2Start <= current_timecheck <= breakTime2End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Wednesday' and ThirdPeriodStart <= current_timecheck <= ThirdPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(mathematika)
         clicks()
-        pause.minutes(45)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 10, 50, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Wednesday' and breakTime3Start <= current_timecheck <= breakTime3End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Wednesday' and FourthPeriodStart <= current_timecheck <= FourthPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(basikathemata)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 11, 40, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Wednesday' and breakTime4Start <= current_timecheck <= breakTime4End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Wednesday' and FifthPeriodStart <= current_timecheck <= FifthPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(fysikh)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 25, 00, 00))
         disconnect()
         pause.seconds(1)
         continue
+    
     elif day == 'Wednesday' and breakTime5Start <= current_timecheck <= breakTime5End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Wednesday' and SixthPeriodStart <= current_timecheck <= SeventhPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(ylikonduktia)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 00, 00))
         disconnect()
         pause.seconds(1)
         run = False
@@ -389,119 +416,134 @@ while run:
         type(browser)
         browser.get(python)
         clicks()
-        pause.minutes(155)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 10, 50, 00, 00))
         disconnect()
         continue
+    
     elif day == 'Thursday' and breakTime3Start <= current_timecheck <= breakTime3Start:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Thursday' and FourthPeriodStart <= current_timecheck <= FifthPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(pwlhseis)
         clicks()
-        pause.minutes(80)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 25, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Thursday' and breakTime5Start <= current_timecheck <= breakTime5End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Thursday' and SixthPeriodStart <= current_timecheck <= SixthPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get('https://minedu-secondary2.webex.com/meet/nsivakis')
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 10, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Thursday' and SeventhPeriodStart <= current_timecheck <= SeventhPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(agglika)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 05, 00))
         disconnect()
         pause.seconds(2)
         run = False
+        
     # Friday
     elif day == 'Friday' and firstPeriodStart <= current_timecheck <= firstPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(glwssa)
         clicks()
-        pause.minutes(45)
-        # disconnect()
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 00, 05, 00))
+        disconnect()
         continue
+    
     elif day == 'Friday' and breakTimeStart <= current_timecheck <= breakTimeEnd:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Friday' and SecondPeriodStart <= current_timecheck <= SecondPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(gym)
         clicks()
-        pause.minutes(45)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 09, 55, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Friday' and breakTime2Start <= current_timecheck <= breakTime2End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Friday' and ThirdPeriodStart <= current_timecheck <= FourthPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(istotopoi)
         clicks()
-        pause.minutes(95)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 11, 40, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Friday' and breakTime4Start <= current_timecheck <= breakTime4End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Friday' and FifthPeriodStart <= current_timecheck <= FifthPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(leitourgika)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 12, 25, 05, 00))
         disconnect()
         pause.seconds(2)
         continue
+    
     elif day == 'Friday' and breakTime5Start <= current_timecheck <= breakTime5End:
         print("Διάλειμμα")
         pause.seconds(5)
         continue
+    
     elif day == 'Friday' and SixthPeriodStart <= current_timecheck <= SixthPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(eisagwgh)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 09, 55, 00))
         disconnect()
         pause.seconds(1)
         continue
+    
     elif day == 'Friday' and SeventhPeriodStart <= current_timecheck <= SeventhPeriodEnd:
         browser = webdriver.Chrome(executable_path=browser_location, options=options)
         type(browser)
         browser.get(mathematika)
         clicks()
-        pause.minutes(40)
+        pause.until(date(check.tm_year, check.tm_mon, check.tm_mday, 13, 50, 05, 00))
         disconnect()
         pause.seconds(1)
         run = False
+        
     elif day == 'Saturday' or day == 'Sunday' and firstPeriodStart <= current_timecheck <= SeventhPeriodEnd:
-        print("Einai savvatokuriako Blaka")
-    #  break
+        print("It's Weekend")
     else:
-        print("break or not currently school day")
+        print("School Break or no School today")
         pause.seconds(5)
         continue
 
